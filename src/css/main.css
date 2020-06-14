@@ -233,3 +233,53 @@ strong {
     --reference-item-background: hsl(0, 0%, 93%) !important;
     --brackets-color: rgba(0, 0, 0, 0.3) !important;
     --empty-text-color: hsl(203, 5%, 70%); } }
+
+/*
+ * adapted from Rob Haisfield
+   lets me customize color of the selected block and text within it
+*/
+.rm-block-input {
+  line-height: 1.5em;
+  width: 100%;
+  outline: 1px solid rgba(0, 0, 0, 0);
+  overflow-wrap: break-spaces;
+  vertical-align: to#7991A1
+  margin-top: -1px;
+  color: #000 !important;
+  background-color: 
+    #86B1D86B;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px; /*5px;*/
+  letter-spacing: inherit;
+  border-radius: 10px;
+  resize: none;
+}
+
+/*
+ * format the query title / text of a query and the query results
+ */
+.rm-query-title {
+  color: gray !important;
+  font-family: "Lucida Console", Courier, monospace !important;
+  font-size: 0.75em !important;
+}
+
+/*** and individual result item in the query ***/
+.rm-query-content .rm-reference-item {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+/*** remove extra space from the bottom of the result item ***/
+.rm-query-content .rm-reference-item .roam-block-container {
+  margin-bottom: -8px !important;
+}
+
+.rm-query-content .rm-reference-item .rm-block-text,
+.rm-query-content .rm-reference-item .controls {
+  padding-top: 0px !important;
+  padding-bottom: 2px !important;
+}
